@@ -1,5 +1,4 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/75a743b7e2e2446a804945ad488f74ca)](https://www.codacy.com/app/tandser/logreader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tandser/logreader&amp;utm_campaign=Badge_Grade)
-[![Dependency Status](https://dependencyci.com/github/tandser/logreader/badge)](https://dependencyci.com/github/tandser/logreader)
 
 # Сборка проекта
 
