@@ -33,7 +33,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Preconditions.checkArgument(args.length == numberOfArgs, "Invalid number of arguments");
 
-        double durationLimit = -1, availabilityLimit = -1;
+        double durationLimit     = -1;
+        double availabilityLimit = -1;
 
         for (int i = 0; i < args.length; i++) {
             if (i % 2 == 0) {
@@ -56,7 +57,8 @@ public class Main {
         }
 
         try (LogReader reader = new LogReader(new InputStreamReader(System.in))) {
-            long numberOfRequests = 0, numberOfFailures = 0;
+            long numberOfRequests = 0;
+            long numberOfFailures = 0;
 
             boolean wasBegan = false; // было ли начало отказа
 
