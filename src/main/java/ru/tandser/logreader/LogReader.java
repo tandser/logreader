@@ -71,14 +71,16 @@ public class LogReader implements Closeable {
      * Проверяет, есть ли во входном потоке данные для чтения.
      *
      * @return возвращает <code>true</code>, есть данные в потоке есть
+     * @throws IOException в случае ошибок ввода/вывода
      */
     public boolean isMore() throws IOException {
         return reader.ready();
     }
 
     /**
-     * Осовождает входной поток данных и освобождает выделенные
-     * ресурсы.
+     * Закрывает входной поток данных и освобождает выделенные ресурсы.
+     *
+     * @throws IOException в случае ошибок ввода/вывода
      */
     @Override
     public void close() throws IOException {
