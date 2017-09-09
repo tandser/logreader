@@ -40,7 +40,10 @@ public class Main {
                 try {
                     switch (args[i]) {
                         case "-u": availabilityLimit = Double.parseDouble(args[i + 1]);
+                                   break;
                         case "-t": durationLimit     = Double.parseDouble(args[i + 1]);
+                                   break;
+                        default  : break;
                     }
                 } catch (NumberFormatException exc) {
                     throw new IllegalArgumentException(errorMessage);
